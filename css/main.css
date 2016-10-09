@@ -2475,10 +2475,10 @@
 /* Banner */
 
 	#banner {
-		background-image: url("../../images/banner_new.jpg");
+		background-image: url("../../images/banner.jpeg");
 		background-position: center center;
 		background-size: cover;
-		height: 32em;
+		height: 64em;
 		text-align: center;
 		position: relative;
 	}
