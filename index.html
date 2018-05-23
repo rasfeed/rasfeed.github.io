@@ -33,7 +33,7 @@
                                 <li class="current"><a href="/index.html">Home</a></li>
                                 <li><a href="/aboutus.html">About Us</a></li>
                                 <li>
-                                    <a href="/products">Our Products</a>
+                                    <a href="/products.html">Our Products</a>
                                     <ul>
                                         <li><a href='/products/mathura.html'>Mathura Milk Calcium</a></li>
                                         <li><a href='/products/gobardhan.html'>Gobardhan Sudhamix</a></li>
@@ -62,6 +62,18 @@
                 </section>
                 -->
                 <img src="/images/banner.jpeg">
+                <div class="mySlides w3-animate-fading" style="height: 110vh">
+                    <img class="w3-animate-fading" src="/images/products/all products 2.png">
+                </div>
+                <div class="mySlides w3-animate-fading" style="height: 110vh">
+                    <img class="w3-animate-fading" src="/images/products/all products 4.png">
+                </div>
+                <div class="mySlides w3-animate-fading" style="height: 110vh">
+                    <img class="w3-animate-fading" src="/images/products/all products 3.png">
+                </div>
+                <div class="mySlides w3-animate-fading" style="height: 110vh">
+                    <img class="w3-animate-fading" src="/images/products/all products 5.png">
+                </div>
             </div>
 
             <!-- Highlights -->
@@ -109,7 +121,7 @@
                         <div class="row">
                             <section class="6u 12u(narrower)">
                                 <div class="box post">
-                                    <a href="#" class="image left"><img src="images/products/rsri.jpg" alt="" /></a>
+                                    <a href="#" class="image left"><img src="images/products/rsri-pwr-gel.png" alt="" /></a>
                                     <div class="inner">
                                         <h3>RSRI PWR Gel</h3>
                                         <p>As an aid to cattles, RSRI PWR Gel prevents milk fever and associated complications. Results in better milk production.</p>
@@ -118,7 +130,7 @@
                             </section>
                             <section class="6u 12u(narrower)">
                                 <div class="box post">
-                                    <a href="#" class="image left"><img src="images/products/mathura.jpg" alt="" /></a>
+                                    <a href="#" class="image left"><img src="images/products/mathura milk combo.png" alt="" /></a>
                                     <div class="inner">
                                         <h3>Mathura Milk Calcium</h3>
                                         <p>Vitamin D3 enhances intestinal absorption of Calcium and Phosphorus. Meets extra demands of high yielders. Diet for stabilizing high milk yield.</p>
@@ -129,7 +141,7 @@
                         <div class="row">
                             <section class="6u 12u(narrower)">
                                 <div class="box post">
-                                    <a href="#" class="image left"><img src="images/products/gobardhan.jpg" alt="" /></a>
+                                    <a href="#" class="image left"><img src="images/products/goberdhan sudha mix 10kg.png" alt="" /></a>
                                     <div class="inner">
                                         <h3>Gobardhan Sudhamix</h3>
                                         <p>Enhances the release of FSH, LH and Pregnancy specific proteins. A golden solution for improved productivity and fertility.</p>
@@ -138,7 +150,7 @@
                             </section>
                             <section class="6u 12u(narrower)">
                                 <div class="box post">
-                                    <a href="#" class="image left"><img src="images/products/balaji.jpg" alt="" /></a>
+                                    <a href="#" class="image left"><img src="images/products/balaji-liver-balwan.png" alt="" /></a>
                                     <div class="inner">
                                         <h3>Balaji Liver Balwan</h3>
                                         <p>Promotes Blood Purification and Liver Detoxication. In liver dysfunctions, poor digestion and weight loss, Liver tonic is paramount.</p>
@@ -168,7 +180,7 @@
                                 <ul class="links">
                                     <li><a href="/">Home</a></li>
                                     <li><a href="/aboutus.html">About Us</a></li>
-                                    <li><a href="/products">Our Products</a></li>
+                                    <li><a href="/products.html">Our Products</a></li>
                                     <li><a href="/ourteam.html">Our Team</a></li>
                                     <li><a href="/contactus.html">Contact Us</a></li>
                                 </ul>
@@ -224,6 +236,24 @@
             <script src="js/skel.min.js"></script>
             <script src="js/util.js"></script>
             <script src="js/main.js"></script>
+
+<script type="text/javascript">
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        // x[slideIndex-1].style.display = "block";
+        $(x[slideIndex-1]).fadeIn("slow")
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117726844-2"></script>
